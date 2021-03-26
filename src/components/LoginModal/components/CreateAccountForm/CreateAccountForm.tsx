@@ -1,5 +1,4 @@
 import React, { FunctionComponent, ChangeEvent } from 'react';
-import { InputFieldWrapper, ValidateButtonContainer } from './CreateAccountForm.style';
 import { CircularProgress } from '@material-ui/core';
 import { TextFieldProps } from '@material-ui/core/TextField';
 import { useIntl } from 'react-intl';
@@ -13,6 +12,8 @@ import {
   getCityOrCountryLabel,
 } from './lib/useCityAndCountryAutocomplete';
 import Autocomplete from '@material-ui/lab/Autocomplete';
+import { InputFieldWrapper } from 'components/InputField/InputField.style';
+import { ValidateButtonContainer } from 'components/Modal/Modal.style';
 
 interface CreateAccountFormProps<OtherFormValues> {
   AdditionalFields?: FunctionComponent<{

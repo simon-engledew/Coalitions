@@ -38,3 +38,9 @@ export const ContentContainer = styled.div`
     padding: 0 ${getSpacing(8)} ${getSpacing(8)} ${getSpacing(8)};
   `)}
 `;
+
+export const ValidateButtonContainer = styled.div`
+  ${media.desktop(`
+    margin-top: ${getSpacing(10)};
+  `)}
+`;
